@@ -10,7 +10,7 @@ console.log('Loading routes...');
 let authRoutes, nodeRoutes;
 
 try {
-  authRoutes = (await import('./routes/auth.ts')).default;
+  authRoutes = (await import('./routes/auth.js')).default;
   console.log('Auth routes loaded');
 } catch (error) {
   console.error('Failed to load auth routes:', error);
@@ -18,7 +18,7 @@ try {
 }
 
 try {
-  nodeRoutes = (await import('./routes/nodes.ts')).default;
+  nodeRoutes = (await import('./routes/nodes.js')).default;
   console.log('Node routes loaded');
 } catch (error) {
   console.error('Failed to load node routes:', error);
