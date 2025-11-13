@@ -4,11 +4,11 @@
   "description": "Backend server for Number Discussions using Express, Supabase, and TypeScript",
   "main": "dist/server.js",
   "type": "module",
-  "scripts": {
-    "dev": "nodemon --watch src --exec ts-node src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js"
-  },
+ "scripts": {
+  "dev": "tsx watch src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -28,6 +28,7 @@
     "@types/node": "^24.10.1",
     "nodemon": "^3.1.11",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   }
 }

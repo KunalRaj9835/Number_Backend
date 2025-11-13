@@ -10,8 +10,7 @@
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "sourceMap": true,
-    "noEmit": true,
-    "allowImportingTsExtensions": true
+    "noEmit": false
   },
   "include": ["src"]
 }
